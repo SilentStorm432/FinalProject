@@ -13,20 +13,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="This is home." />
+        android:text="Welcome to:\nBBC News Viewer!"
+        android:gravity="center"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="143dp"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:text="Newest Stories:"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fragmentContainer"
+            app:layout_constraintEnd_toStartOf="@+id/fragmentContainer"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fragmentContainer"
+            app:layout_constraintVertical_bias="0.418" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Select the drop-down menu on the top left to get started."
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.097" />
+
         <FrameLayout
             android:id="@+id/fragmentContainer"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_margin="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="341dp"
+            android:layout_height="252dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076"
+            app:srcCompat="@drawable/bbclogo" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
