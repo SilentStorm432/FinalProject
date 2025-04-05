@@ -14,7 +14,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ArticleDetailActivity extends AppCompatActivity {
-
     private Gson gson = new Gson();
 
     @Override
