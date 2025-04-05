@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,6 +11,61 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Creds" />
+        android:text="App Credits:"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Articles and their related information are the property of the BBC and its direct affiliates."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This application was created by Joshua Maedel as the Final Project of CST2335 with Algonquin College."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assignment submitted on 04/05/2025."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="143dp"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:text="Newest Stories:"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fragmentContainer"
+            app:layout_constraintEnd_toStartOf="@+id/fragmentContainer"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fragmentContainer"
+            app:layout_constraintVertical_bias="0.418" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </LinearLayout>

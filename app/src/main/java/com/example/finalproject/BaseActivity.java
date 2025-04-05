@@ -12,9 +12,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
 
+//Activity handles the navigation drawer so it can be used on all other activities.
 public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Final Project - V1.0");
         setSupportActionBar(toolbar);
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
